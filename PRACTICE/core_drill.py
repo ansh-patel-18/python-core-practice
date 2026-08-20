@@ -8,7 +8,7 @@
 # result = " - ".join(clean_list)
 # print(result)
 
-raw_input = "  rahul,  python , FASTAPI , sql ,  git  "
-clean_data = [item.strip().lower() for item in raw_input.split(',')]
-result = " - ".join(clean_data)
-print(result)
+# raw_input = "  rahul,  python , FASTAPI , sql ,  git  "
+# clean_data = [item.strip().lower() for item in raw_input.split(',')]
+# result = " - ".join(clean_data)
+# print(result)
