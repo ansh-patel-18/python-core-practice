@@ -48,26 +48,61 @@
 
 ###################################################################################################
 
-def build_user_payload(username:str, role:str='guest'):
-    allowed_role = {"admin","user","guest"}
+# def build_user_payload(username:str, role:str='guest'):
+#     allowed_role = {"admin","user","guest"}
 
-    if role not in allowed_role:
-        role = "guest"
+#     if role not in allowed_role:
+#         role = "guest"
 
-    if role =="admin":
-        access = "FULL"
-    else:
-        access = "Risricted"
+#     if role =="admin":
+#         access = "FULL"
+#     else:
+#         access = "Risricted"
     
-    return {"usename":username,
-            "Role":role,
-            "Access":access
-    }
-user = input("Enter username : ")
-role = input("Enter your role : ").lower()
-if role == "":
-    role = "guest"
+#     return {"usename":username,
+#             "Role":role,
+#             "Access":access
+#     }
+# user = input("Enter username : ")
+# role = input("Enter your role : ").lower()
+# if role == "":
+#     role = "guest"
     
-total = build_user_payload(user, role)
-print("")
-print(total)
+# total = build_user_payload(user, role)
+# print("")
+# print(total)
+
+###################################################################################################
+
+# def get_subscription_tier(plan: str, is_verified: bool = False):
+#     if plan=="pro":
+#         storage_gb = 50
+#         final_plan = "pro"
+#     elif plan=="enterprice":
+#         storage_gb = 500
+#         final_plan = "enterprise"    
+#     else:
+#         storage_gb = 5
+#         final_plan = "free"
+    
+#     if is_verified==True:
+#             status = "Active"
+#     else:
+#          status = "PENDING_VERIFICATION"    
+
+#     return{
+#         "plan":final_plan,
+#         "Storage_gb":storage_gb,
+#         "status":status
+#     }
+
+# # print(get_subscription_tier("pro",True))
+
+# user_plan = input("Enter your plan : ")
+# user_verification = bool(input("Your plan is varify (True or False) : "))
+
+# final_data = get_subscription_tier(user_plan, user_verification)
+# print(final_data)
+
+###################################################################################################
+
